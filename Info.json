@@ -2,8 +2,8 @@
   "name": "SponsorBlock Chapter Skip",
   "identifier": "com.vdesselwout.sponsorblock-skip",
   "version": "1.0.0",
-  "description": "Slaat door yt-dlp gemarkeerde [SponsorBlock]-hoofdstukken automatisch over.",
-  "author": { "name": "Wout" },
+  "description": "Automatically skips [SponsorBlock] chapters marked by yt-dlp.",
+  "author": { "name": "Wout", "url": "https://github.com/vdesselwout/iina-sponsorblock-skip" },
   "entry": "main.js",
   "permissions": ["show-osd"]
 }

@@ -1,9 +1,23 @@
 # iina-sponsorblock-skip
 
-IINA-plugin die hoofdstukken met `[SponsorBlock]` in de titel (zoals yt-dlp ze aanmaakt met `--sponsorblock-mark`) automatisch overslaat.
+An [IINA](https://iina.io) plugin that automatically skips chapters with `[SponsorBlock]` in their title, as created by [yt-dlp](https://github.com/yt-dlp/yt-dlp) with `--sponsorblock-mark`.
 
-## Installeren
-Open `sponsorblock-skip.iinaplgz` met IINA en herstart IINA.
-Na een wijziging opnieuw bouwen: `zip -j sponsorblock-skip.iinaplgz Info.json main.js`.
+## Usage
+Download videos with SponsorBlock chapters marked:
 
-Pas `SKIP` in `main.js` aan om categorieën te kiezen.
+```sh
+yt-dlp --sponsorblock-mark all <url>
+```
+
+Play the file in IINA; marked segments are skipped and an on-screen message shows which one.
+
+## Installation
+Download `sponsorblock-skip.iinaplgz` from the [latest release](https://github.com/vdesselwout/iina-sponsorblock-skip/releases/latest), open it with IINA, and restart IINA.
+
+## Configuration
+Edit `SKIP` in `main.js` to choose which categories to skip.
+
+## Building
+```sh
+mkdir -p build && zip -j build/sponsorblock-skip.iinaplgz Info.json main.js
+```
